@@ -4,24 +4,38 @@ import FplanKit
 @main
 struct FplanApp: App {
     
-    func fpReadyCallback(){
-        //Some code
+    let fplanView: FplanView
+    
+    init() {
+        func fplanReadyHandler(){
+            //Some code
+        }
+        
+        func boothSelectionHandler(boothName: String){
+            //Some code
+        }
+        
+        func routeBuildHandler(route: Route){
+            //Some code
+        }
+        
+        fplanView = FplanView("https://developer.expofp.com/examples/autumnfair.html",
+                              fplanReadyHandler: fplanReadyHandler,
+                              boothSelectionHandler: boothSelectionHandler,
+                              routeBuildHandler: routeBuildHandler)
     }
     
-    func boothSelectionCallback(boothName: String){
-        //Some code
+    func selectBooth(_ boothName: String) {
+        fplanView.selectBooth(boothName)
     }
     
-    func routeBuildCallback(route: Route){
-        //Some code
+    func selectBooth(_ from: String, _ to: String, _ exceptUnaccessible: Bool) {
+        fplanView.buildRoute(from, to, exceptUnaccessible)
     }
     
     var body: some Scene {
         WindowGroup {
-            FplanView("https://developer.expofp.com/examples/autumnfair.html",
-                      fplanReadyHandler: fpReadyCallback,
-                      boothSelectionHandler: boothSelectionCallback,
-                      routeBuildHandler: routeBuildCallback)
+            fplanView
         }
     }
 }
