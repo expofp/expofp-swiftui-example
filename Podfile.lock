@@ -1,0 +1,16 @@
+PODS:
+  - FplanKit (1.0.9)
+
+DEPENDENCIES:
+  - FplanKit
+
+SPEC REPOS:
+  trunk:
+    - FplanKit
+
+SPEC CHECKSUMS:
+  FplanKit: 40a14317a2b5ff9040132209dfa5e62e20269058
+
+PODFILE CHECKSUM: da111705fc23f07c7dbffd9ce6667e4184bd2996
+
+COCOAPODS: 1.11.2
