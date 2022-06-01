@@ -53,6 +53,7 @@ struct FplanApp: App {
         WindowGroup {
             VStack
             {
+                //noOverlay - Hides the panel with information about exhibitors
                 FplanView(url, noOverlay: false, selectedBooth: $selectedBooth, route: route, currentPosition: currentPosition,
                           fpReadyAction: fpReady, buildDirectionAction: directionReady)
                 HStack
