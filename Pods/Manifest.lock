@@ -1,5 +1,5 @@
 PODS:
-  - FplanKit (1.0.9)
+  - FplanKit (1.1.12)
 
 DEPENDENCIES:
   - FplanKit
@@ -9,7 +9,7 @@ SPEC REPOS:
     - FplanKit
 
 SPEC CHECKSUMS:
-  FplanKit: 40a14317a2b5ff9040132209dfa5e62e20269058
+  FplanKit: 2176c8651bb3d715a7504393b9124d9813da7068
 
 PODFILE CHECKSUM: da111705fc23f07c7dbffd9ce6667e4184bd2996
 
