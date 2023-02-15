@@ -1,64 +1,76 @@
 import SwiftUI
-import FplanKit
+import ExpoFpCommon
+import ExpoFpFplan
+import ExpoFpGpsProvider
+import ExpoFpCrowdConnected
+import ExpoFpIndoorAtlas
 
 @main
 struct FplanApp: App {
-    
-    @State var url: String = "https://demo.expofp.com"
-    @State var selectedBooth: String? = nil
-    @State var route: Route? = nil
-    @State var currentPosition: BlueDotPoint? = nil
+
+    let fplanView = FplanView()
     
     func selectBooth() {
-        self.route = nil
-        self.currentPosition = nil
-        self.selectedBooth = "720"
+        fplanView.selectBooth("656")
     }
     
     func buildRoute() {
-        self.selectedBooth = nil
-        self.route = Route(from: "720", to: "751", exceptInaccessible: false)
+        fplanView.buildRoute(Route(from: "519", to: "656", exceptInaccessible: false))
     }
     
     func setPosition() {
-        self.selectedBooth = nil
-        self.currentPosition = BlueDotPoint(x: 22270, y: 44900)
+        fplanView.setCurrentPosition(BlueDotPoint(latitude: 38.180023, longitude: -85.845180), true)
     }
     
     func clear() {
-        self.currentPosition = nil
-        self.route = nil
-        self.selectedBooth = ""
-    }
-    
-    func fpReady() {
-        print("[Fplan] - fpReady")
-    }
-    
-    func directionReady(direction: Direction){
-        print("[Fplan] - directionReady")
-        print(direction)
+        fplanView.clear()
     }
     
     var body: some Scene {
         WindowGroup {
-            VStack
-            {
-                //noOverlay - Hides the panel with information about exhibitors
-                FplanView(url, noOverlay: false, selectedBooth: $selectedBooth, route: route, currentPosition: currentPosition,
-                          fpReadyAction: fpReady, buildDirectionAction: directionReady)
-                HStack
+            NavigationView {
+                VStack
                 {
-                    Spacer()
-                    Button("Select booth", action: selectBooth)
-                    Spacer()
-                    Button("Build route", action: buildRoute)
-                    Spacer()
-                    Button("Set position", action: setPosition)
-                    Spacer()
-                    Button("Clear", action: clear)
-                    Spacer()
+                     fplanView.onFpReady{
+                         print("[Fplan] - onFpReady")
+                     }
+                     .onBoothClick{ boothName in
+                         print("[Fplan] - onBoothClick: \(boothName)")
+                     }
+                     .onBuildDirection { direction in
+                         print("[Fplan] - onBuildDirection:")
+                         print(direction)
+                     }
+                     .onAppear{
+                         
+                         var lp: LocationProvider? = nil
+                         
+                         //Uncomment if you want to use any location provider
+                         //lp = CrowdConnectedProvider(Settings("APP_KEY", "TOKEN", "SECRET"))
+                         //lp = IndoorAtlasProvider(Settings("API_KEY", "API_SECRET_KEY"))
+                         //lp = GpsProvider()
+                         
+                         fplanView.load("demo.expofp.com")
+                     }
+                     .onDisappear {
+                         fplanView.destoy()
+                     }
+                    .toolbar {
+                        ToolbarItem {
+                            Button("Select booth", action: selectBooth)
+                        }
+                        ToolbarItem {
+                            Button("Build route", action: buildRoute)
+                        }
+                        ToolbarItem {
+                            Button("Set position", action: setPosition)
+                        }
+                        ToolbarItem {
+                            Button("Clear", action: clear)
+                        }
+                    }
                 }
+                
             }
         }
     }

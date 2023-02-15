@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D53242A49BAA8EB0C2BCE124 /* Pods_Fplan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92041C8742669E34F2DFFA5 /* Pods_Fplan.framework */; };
+		52BE63D84AF7B142F0AD972B /* Pods_Fplan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337EEA253DD29D3A106B9908 /* Pods_Fplan.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E79136A827860EDC00A573F1 /* FplanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79136A727860EDC00A573F1 /* FplanApp.swift */; };
 		E79136AC27860EDC00A573F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79136AB27860EDC00A573F1 /* Assets.xcassets */; };
 		E79136AF27860EDC00A573F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79136AE27860EDC00A573F1 /* Preview Assets.xcassets */; };
@@ -27,13 +27,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1C5E31313FB928AF5351E775 /* Pods-Fplan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fplan.release.xcconfig"; path = "Target Support Files/Pods-Fplan/Pods-Fplan.release.xcconfig"; sourceTree = "<group>"; };
-		4E178DC106D2F19E4AA630AB /* Pods-Fplan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fplan.debug.xcconfig"; path = "Target Support Files/Pods-Fplan/Pods-Fplan.debug.xcconfig"; sourceTree = "<group>"; };
-		A92041C8742669E34F2DFFA5 /* Pods_Fplan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fplan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337EEA253DD29D3A106B9908 /* Pods_Fplan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fplan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E738826B28EADB8B0011E318 /* ExpoFpIndoorAtlas.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ExpoFpIndoorAtlas.xcframework; path = "../expofp-indooratlas-ios/xcframework/ExpoFpIndoorAtlas.xcframework"; sourceTree = "<group>"; };
 		E79136A427860EDC00A573F1 /* Fplan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fplan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79136A727860EDC00A573F1 /* FplanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FplanApp.swift; sourceTree = "<group>"; };
 		E79136AB27860EDC00A573F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79136AE27860EDC00A573F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F38C9A991B7B3B208D6D8ACC /* Pods-Fplan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fplan.release.xcconfig"; path = "Target Support Files/Pods-Fplan/Pods-Fplan.release.xcconfig"; sourceTree = "<group>"; };
+		FCFE6347CC11EC850A1715DA /* Pods-Fplan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fplan.debug.xcconfig"; path = "Target Support Files/Pods-Fplan/Pods-Fplan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +42,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53242A49BAA8EB0C2BCE124 /* Pods_Fplan.framework in Frameworks */,
+				52BE63D84AF7B142F0AD972B /* Pods_Fplan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B830F3EE81DB47874FDF903 /* Frameworks */ = {
+		4B5D289A2893A63674118DE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A92041C8742669E34F2DFFA5 /* Pods_Fplan.framework */,
+				E738826B28EADB8B0011E318 /* ExpoFpIndoorAtlas.xcframework */,
+				337EEA253DD29D3A106B9908 /* Pods_Fplan.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -59,10 +61,9 @@
 		C7357AE0C49BB046B361AD9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4E178DC106D2F19E4AA630AB /* Pods-Fplan.debug.xcconfig */,
-				1C5E31313FB928AF5351E775 /* Pods-Fplan.release.xcconfig */,
+				FCFE6347CC11EC850A1715DA /* Pods-Fplan.debug.xcconfig */,
+				F38C9A991B7B3B208D6D8ACC /* Pods-Fplan.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -72,7 +73,7 @@
 				E79136A627860EDC00A573F1 /* Fplan */,
 				E79136A527860EDC00A573F1 /* Products */,
 				C7357AE0C49BB046B361AD9E /* Pods */,
-				2B830F3EE81DB47874FDF903 /* Frameworks */,
+				4B5D289A2893A63674118DE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,12 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E79136B227860EDC00A573F1 /* Build configuration list for PBXNativeTarget "Fplan" */;
 			buildPhases = (
-				D7ED68AFAF6BAABF0B0DA911 /* [CP] Check Pods Manifest.lock */,
+				EE3C04BC0A834EB132BFBA08 /* [CP] Check Pods Manifest.lock */,
 				E79136A027860EDC00A573F1 /* Sources */,
 				E79136A127860EDC00A573F1 /* Frameworks */,
 				E79136A227860EDC00A573F1 /* Resources */,
 				E79136B92786103900A573F1 /* Embed Frameworks */,
-				5FF984DFCA49F899005054F6 /* [CP] Embed Pods Frameworks */,
+				338FA6500C4D0477334F4FBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,7 +142,7 @@
 				};
 			};
 			buildConfigurationList = E791369F27860EDC00A573F1 /* Build configuration list for PBXProject "Fplan" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -171,7 +172,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5FF984DFCA49F899005054F6 /* [CP] Embed Pods Frameworks */ = {
+		338FA6500C4D0477334F4FBA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,7 +189,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D7ED68AFAF6BAABF0B0DA911 /* [CP] Check Pods Manifest.lock */ = {
+		EE3C04BC0A834EB132BFBA08 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -289,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -330,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -342,28 +344,37 @@
 		};
 		E79136B327860EDC00A573F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E178DC106D2F19E4AA630AB /* Pods-Fplan.debug.xcconfig */;
+			baseConfigurationReference = FCFE6347CC11EC850A1715DA /* Pods-Fplan.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"Fplan/Preview Content\"";
 				DEVELOPMENT_TEAM = 2TWXV89QU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Fplan/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth requested for better positioning experience.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth requested for better positioning experience.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "For better indoor positioning.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.expofp.Fplan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -372,28 +383,37 @@
 		};
 		E79136B427860EDC00A573F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C5E31313FB928AF5351E775 /* Pods-Fplan.release.xcconfig */;
+			baseConfigurationReference = F38C9A991B7B3B208D6D8ACC /* Pods-Fplan.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"Fplan/Preview Content\"";
 				DEVELOPMENT_TEAM = 2TWXV89QU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Fplan/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth requested for better positioning experience.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth requested for better positioning experience.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "For better indoor positioning.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.expofp.Fplan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
