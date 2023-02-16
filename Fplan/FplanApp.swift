@@ -1,9 +1,6 @@
 import SwiftUI
 import ExpoFpCommon
 import ExpoFpFplan
-import ExpoFpGpsProvider
-import ExpoFpCrowdConnected
-import ExpoFpIndoorAtlas
 
 @main
 struct FplanApp: App {
@@ -42,14 +39,6 @@ struct FplanApp: App {
                          print(direction)
                      }
                      .onAppear{
-                         
-                         var lp: LocationProvider? = nil
-                         
-                         //Uncomment if you want to use any location provider
-                         //lp = CrowdConnectedProvider(Settings("APP_KEY", "TOKEN", "SECRET"))
-                         //lp = IndoorAtlasProvider(Settings("API_KEY", "API_SECRET_KEY"))
-                         //lp = GpsProvider()
-                         
                          fplanView.load("demo.expofp.com")
                      }
                      .onDisappear {

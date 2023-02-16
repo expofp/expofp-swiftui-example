@@ -1,0 +1,82 @@
+PODS:
+  - AWSAuthCore (2.28.2):
+    - AWSCore (= 2.28.2)
+  - AWSCognitoIdentityProvider (2.28.2):
+    - AWSCognitoIdentityProviderASF (= 2.28.2)
+    - AWSCore (= 2.28.2)
+  - AWSCognitoIdentityProviderASF (2.28.2):
+    - AWSCore (= 2.28.2)
+  - AWSCore (2.28.2)
+  - AWSKinesis (2.28.2):
+    - AWSCore (= 2.28.2)
+  - AWSMobileClient (2.28.2):
+    - AWSAuthCore (= 2.28.2)
+    - AWSCognitoIdentityProvider (= 2.28.2)
+    - AWSCognitoIdentityProviderASF (= 2.28.2)
+    - AWSCore (= 2.28.2)
+  - AWSPinpoint (2.28.2):
+    - AWSCore (= 2.28.2)
+  - CrowdConnectedCore (1.4.0):
+    - AWSMobileClient
+    - AWSPinpoint
+    - CrowdConnectedShared
+  - CrowdConnectedGeo (1.4.0):
+    - CrowdConnectedShared
+  - CrowdConnectedIPS (1.4.0):
+    - CrowdConnectedShared
+  - CrowdConnectedShared (1.4.0)
+  - ExpoFpCommon (3.0.10)
+  - ExpoFpCrowdConnected (3.0.10):
+    - AWSKinesis (= 2.28.2)
+    - CrowdConnectedCore (= 1.4.0)
+    - CrowdConnectedGeo (= 1.4.0)
+    - CrowdConnectedIPS (= 1.4.0)
+    - ExpoFpCommon (= 3.0.10)
+  - ExpoFpFplan (3.0.10):
+    - ExpoFpCommon (= 3.0.10)
+  - ExpoFpGpsProvider (3.0.10):
+    - ExpoFpCommon (= 3.0.10)
+
+DEPENDENCIES:
+  - ExpoFpCrowdConnected (= 3.0.10)
+  - ExpoFpFplan (= 3.0.10)
+  - ExpoFpGpsProvider (= 3.0.10)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AWSAuthCore
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSKinesis
+    - AWSMobileClient
+    - AWSPinpoint
+    - CrowdConnectedCore
+    - CrowdConnectedGeo
+    - CrowdConnectedIPS
+    - CrowdConnectedShared
+    - ExpoFpCommon
+    - ExpoFpCrowdConnected
+    - ExpoFpFplan
+    - ExpoFpGpsProvider
+
+SPEC CHECKSUMS:
+  AWSAuthCore: 09b10773154596717583a7ea4e8cf80f7f014d3c
+  AWSCognitoIdentityProvider: fd6ce8429b5cbb22794359424f8bcdf1956aa7c1
+  AWSCognitoIdentityProviderASF: ae23b2c36af3d59622b23d79cea88707662ada6e
+  AWSCore: 1e0cdd5ac2330d02ce019673065791d2b6596293
+  AWSKinesis: 5cd8700ee9e33fd439f8e1850f29fe93092c9ccb
+  AWSMobileClient: 2fed98a97ee48bf8401bcb1649d32829d5f98962
+  AWSPinpoint: 3a44c5993ecc8466d2d9a1686be0da201ba72604
+  CrowdConnectedCore: 525dee267e5020dd389062355423a53dc0e6bd2a
+  CrowdConnectedGeo: cf4a10afda7347861c28ad30e71f9d4e79f82875
+  CrowdConnectedIPS: 83ea186595aefb164ec6f4f76b6c24db359770ee
+  CrowdConnectedShared: 8aa8ba584aeebdc9bfad7c9ea78d335652ed99fe
+  ExpoFpCommon: cefa33ad816c8525078f7ff838e8901bf85705a7
+  ExpoFpCrowdConnected: af5960e43f9ee799a26ec313b082dbdf9179e298
+  ExpoFpFplan: 081706bbee5a23bb8f7e5e70b568038d9a64c4a0
+  ExpoFpGpsProvider: 470dbf2e3ddb4c32985a4f322fbb12cd566940d7
+
+PODFILE CHECKSUM: d9a02374b78aedddd4360f9a5c5ebd58690ba9aa
+
+COCOAPODS: 1.11.3
