@@ -12,7 +12,7 @@ struct FplanApp: App {
     }
     
     func buildRoute() {
-        fplanView.buildRoute(Route(from: "519", to: "656", exceptInaccessible: false))
+        fplanView.selectRoute(Route(from: "519", to: "656", exceptInaccessible: false))
     }
     
     func setPosition() {
@@ -29,20 +29,31 @@ struct FplanApp: App {
                 VStack
                 {
                      fplanView.onFpReady{
-                         print("[Fplan] - onFpReady")
+                         print("[OnFpReady]")
                      }
-                     .onBoothClick{ boothName in
-                         print("[Fplan] - onBoothClick: \(boothName)")
+                     .onBoothClick{ id, name in
+                         print("[OnBoothClick] id=\(id); name=\(name)")
                      }
                      .onBuildDirection { direction in
-                         print("[Fplan] - onBuildDirection:")
+                         print("[OnBuildDirection]")
                          print(direction)
                      }
+                     .onDetailsClick { details in
+                         print("[OnDetailsClick]")
+                         print(details)
+                     }
+                     .onExhibitorCustomButtonClick { externalId, buttonNumber, buttonUrl in
+                         print("[OnExhibitorCustomButtonClick] externalId=\(externalId); buttonNumber=\(buttonNumber); buttonUrl=\(buttonUrl)")
+                     }
                      .onAppear{
-                         fplanView.load("demo.expofp.com")
+                         DispatchQueue.main.async {
+                             fplanView.load("demo.expofp.com")
+                         }
                      }
                      .onDisappear {
-                         fplanView.destoy()
+                         DispatchQueue.main.async {
+                             fplanView.destoy()
+                         }
                      }
                     .toolbar {
                         ToolbarItem {
