@@ -31,7 +31,7 @@ struct FplanApp: App {
                      fplanView.onFpReady{
                          print("[OnFpReady]")
                      }
-                     .onBoothClick{ id, name in
+                     .onBoothClick { id, name in
                          print("[OnBoothClick] id=\(id); name=\(name)")
                      }
                      .onBuildDirection { direction in
