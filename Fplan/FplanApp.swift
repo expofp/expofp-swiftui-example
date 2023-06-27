@@ -46,14 +46,10 @@ struct FplanApp: App {
                          print("[OnExhibitorCustomButtonClick] externalId=\(externalId); buttonNumber=\(buttonNumber); buttonUrl=\(buttonUrl)")
                      }
                      .onAppear{
-                         DispatchQueue.main.async {
-                             fplanView.load("demo.expofp.com")
-                         }
+                         fplanView.load("demo.expofp.com")
                      }
                      .onDisappear {
-                         DispatchQueue.main.async {
-                             fplanView.destoy()
-                         }
+                         fplanView.destoy()
                      }
                     .toolbar {
                         ToolbarItem {
@@ -70,7 +66,6 @@ struct FplanApp: App {
                         }
                     }
                 }
-                
             }
         }
     }
