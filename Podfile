@@ -5,10 +5,10 @@ platform :ios, '14.0'
 use_frameworks!
 
 def shared_pods
-  pod 'ExpoFpFplan', '4.1.1'
-  pod 'ExpoFpCrowdConnected', '4.1.1'
-  pod 'ExpoFpIndoorAtlas', '4.1.1'
-  pod 'ExpoFpGpsProvider', '4.1.1'
+  pod 'ExpoFpFplan', '4.1.5'
+  pod 'ExpoFpCrowdConnected', '4.1.5'
+  pod 'ExpoFpIndoorAtlas', '4.1.5'
+  pod 'ExpoFpGpsProvider', '4.1.5'
 end
 
 target 'Fplan' do

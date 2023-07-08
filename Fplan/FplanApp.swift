@@ -8,15 +8,15 @@ struct FplanApp: App {
     let fplanView = FplanView()
     
     func selectBooth() {
-        fplanView.selectBooth("656")
+        fplanView.selectBooth("305")
     }
     
     func buildRoute() {
-        fplanView.selectRoute(Route(from: "519", to: "656", exceptInaccessible: false))
+        fplanView.selectRoute(Route(from: "305", to: "339", exceptInaccessible: false))
     }
     
     func setPosition() {
-        fplanView.setCurrentPosition(BlueDotPoint(latitude: 38.180023, longitude: -85.845180), true)
+        fplanView.setCurrentPosition(BlueDotPoint(x: 45000.00, y: 14000.00), true)
     }
     
     func clear() {
@@ -30,6 +30,9 @@ struct FplanApp: App {
                 {
                      fplanView.onFpReady{
                          print("[OnFpReady]")
+                     }
+                     .onFpError { errorCode, description in
+                         print("[OnFpError]")
                      }
                      .onBoothClick { id, name in
                          print("[OnBoothClick] id=\(id); name=\(name)")

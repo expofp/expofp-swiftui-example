@@ -16,38 +16,39 @@ PODS:
     - AWSCore (= 2.28.2)
   - AWSPinpoint (2.28.2):
     - AWSCore (= 2.28.2)
-  - CrowdConnectedCore (1.4.0):
+  - CrowdConnectedCore (1.5.0):
+    - AWSKinesis
     - AWSMobileClient
     - AWSPinpoint
     - CrowdConnectedShared
-  - CrowdConnectedGeo (1.4.0):
+  - CrowdConnectedGeo (1.5.0):
     - CrowdConnectedShared
-  - CrowdConnectedIPS (1.4.0):
+  - CrowdConnectedIPS (1.5.0):
     - CrowdConnectedShared
-  - CrowdConnectedShared (1.4.0)
-  - ExpoFpCommon (4.1.1)
-  - ExpoFpCrowdConnected (4.1.1):
+  - CrowdConnectedShared (1.5.0)
+  - ExpoFpCommon (4.1.5)
+  - ExpoFpCrowdConnected (4.1.5):
     - AWSKinesis (= 2.28.2)
-    - CrowdConnectedCore (= 1.4.0)
-    - CrowdConnectedGeo (= 1.4.0)
-    - CrowdConnectedIPS (= 1.4.0)
-    - ExpoFpCommon (= 4.1.1)
-  - ExpoFpFplan (4.1.1):
-    - ExpoFpCommon (= 4.1.1)
+    - CrowdConnectedCore (= 1.5.0)
+    - CrowdConnectedGeo (= 1.5.0)
+    - CrowdConnectedIPS (= 1.5.0)
+    - ExpoFpCommon (= 4.1.5)
+  - ExpoFpFplan (4.1.5):
+    - ExpoFpCommon (= 4.1.5)
     - ZIPFoundation (= 0.9.16)
-  - ExpoFpGpsProvider (4.1.1):
-    - ExpoFpCommon (= 4.1.1)
-  - ExpoFpIndoorAtlas (4.1.1):
-    - ExpoFpCommon (= 4.1.1)
+  - ExpoFpGpsProvider (4.1.5):
+    - ExpoFpCommon (= 4.1.5)
+  - ExpoFpIndoorAtlas (4.1.5):
+    - ExpoFpCommon (= 4.1.5)
     - IndoorAtlas (~> 3.6)
   - IndoorAtlas (3.6.3)
   - ZIPFoundation (0.9.16)
 
 DEPENDENCIES:
-  - ExpoFpCrowdConnected (= 4.1.1)
-  - ExpoFpFplan (= 4.1.1)
-  - ExpoFpGpsProvider (= 4.1.1)
-  - ExpoFpIndoorAtlas (= 4.1.1)
+  - ExpoFpCrowdConnected (= 4.1.5)
+  - ExpoFpFplan (= 4.1.5)
+  - ExpoFpGpsProvider (= 4.1.5)
+  - ExpoFpIndoorAtlas (= 4.1.5)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -78,18 +79,18 @@ SPEC CHECKSUMS:
   AWSKinesis: 5cd8700ee9e33fd439f8e1850f29fe93092c9ccb
   AWSMobileClient: 2fed98a97ee48bf8401bcb1649d32829d5f98962
   AWSPinpoint: 3a44c5993ecc8466d2d9a1686be0da201ba72604
-  CrowdConnectedCore: 525dee267e5020dd389062355423a53dc0e6bd2a
-  CrowdConnectedGeo: cf4a10afda7347861c28ad30e71f9d4e79f82875
-  CrowdConnectedIPS: 83ea186595aefb164ec6f4f76b6c24db359770ee
-  CrowdConnectedShared: 8aa8ba584aeebdc9bfad7c9ea78d335652ed99fe
-  ExpoFpCommon: cf8ab77d5504c7b5897aeb6d66009f0a938b3b8d
-  ExpoFpCrowdConnected: e47065ad47cd27637655f825204e29ec54d83a98
-  ExpoFpFplan: 5a3b0ef6f69f2bbde161d2927e8607fe25abe5c7
-  ExpoFpGpsProvider: 00b1cf76ef7db3218335f970029ea543295e18f7
-  ExpoFpIndoorAtlas: 9c3aad80ab8a4c044475bc8e09a28e2ee4465cb3
+  CrowdConnectedCore: 7de97cbb41e2b75ee063c32d947a985aab32f2e0
+  CrowdConnectedGeo: 9a933e53a266accdaeb630a31a6fb7ba724acae4
+  CrowdConnectedIPS: 1bef42e3c356e3ee3e3cd9968725c263faf32e8b
+  CrowdConnectedShared: 81c0f9ba7bb8e6fe51ad5f8fe498ae692fb0e81c
+  ExpoFpCommon: cd50fdb7790fc98cb39eaeb27b63ffa4f696e4ec
+  ExpoFpCrowdConnected: 1900b3ce8cca20276b3abd2e3eb1296f2474224e
+  ExpoFpFplan: c0d739bb1f07a0963c2ad382bdcb1ffc67be84e3
+  ExpoFpGpsProvider: 86b517808b44ebe213ae541495b60c577a9750d1
+  ExpoFpIndoorAtlas: 680f1937b44a235c86e36306e8bafd572193dce0
   IndoorAtlas: d84e24bc8079e5525d606222abfb5c325c2b11e5
   ZIPFoundation: d170fa8e270b2a32bef9dcdcabff5b8f1a5deced
 
-PODFILE CHECKSUM: c9cbd11ca5f5e8681586bb93b3017d6f540b4d0f
+PODFILE CHECKSUM: 62faaa9341dfd3caff79d3f9c13de2180aee80ea
 
 COCOAPODS: 1.11.3
