@@ -16,9 +16,6 @@ Documentation: https://expofp.github.io/expofp-mobile-sdk/ios-sdk/
 import SwiftUI
 import ExpoFpCommon
 import ExpoFpFplan
-import ExpoFpGpsProvider
-import ExpoFpCrowdConnected
-import ExpoFpIndoorAtlas
 
 @main
 struct FplanApp: App {
@@ -26,15 +23,15 @@ struct FplanApp: App {
     let fplanView = FplanView()
     
     func selectBooth() {
-        fplanView.selectBooth("656")
+        fplanView.selectBooth("305")
     }
     
     func buildRoute() {
-        fplanView.buildRoute(Route(from: "519", to: "656", exceptInaccessible: false))
+        fplanView.selectRoute(Route(from: "305", to: "339", exceptInaccessible: false))
     }
     
     func setPosition() {
-        fplanView.setCurrentPosition(BlueDotPoint(latitude: 38.180023, longitude: -85.845180), true)
+        fplanView.setCurrentPosition(BlueDotPoint(x: 45000.00, y: 14000.00), true)
     }
     
     func clear() {
@@ -47,24 +44,26 @@ struct FplanApp: App {
                 VStack
                 {
                      fplanView.onFpReady{
-                         print("[Fplan] - onFpReady")
+                         print("[OnFpReady]")
                      }
-                     .onBoothClick{ boothName in
-                         print("[Fplan] - onBoothClick: \(boothName)")
+                     .onFpError { errorCode, description in
+                         print("[OnFpError]")
+                     }
+                     .onBoothClick { id, name in
+                         print("[OnBoothClick] id=\(id); name=\(name)")
                      }
                      .onBuildDirection { direction in
-                         print("[Fplan] - onBuildDirection:")
+                         print("[OnBuildDirection]")
                          print(direction)
                      }
+                     .onDetailsClick { details in
+                         print("[OnDetailsClick]")
+                         print(details)
+                     }
+                     .onExhibitorCustomButtonClick { externalId, buttonNumber, buttonUrl in
+                         print("[OnExhibitorCustomButtonClick] externalId=\(externalId); buttonNumber=\(buttonNumber); buttonUrl=\(buttonUrl)")
+                     }
                      .onAppear{
-                         
-                         var lp: LocationProvider? = nil
-                         
-                         //Uncomment if you want to use any location provider
-                         //lp = CrowdConnectedProvider(Settings("APP_KEY", "TOKEN", "SECRET"))
-                         //lp = IndoorAtlasProvider(Settings("API_KEY", "API_SECRET_KEY"))
-                         //lp = GpsProvider()
-                         
                          fplanView.load("demo.expofp.com")
                      }
                      .onDisappear {
@@ -85,11 +84,11 @@ struct FplanApp: App {
                         }
                     }
                 }
-                
             }
         }
     }
 }
+
 ```
 
 ## Screenshot
