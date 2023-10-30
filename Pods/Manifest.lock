@@ -26,26 +26,26 @@ PODS:
   - CrowdConnectedIPS (1.6.0):
     - CrowdConnectedShared
   - CrowdConnectedShared (1.6.0)
-  - ExpoFpCommon (4.2.8)
-  - ExpoFpCrowdConnected (4.2.8):
+  - ExpoFpCommon (4.2.11)
+  - ExpoFpCrowdConnected (4.2.11):
     - AWSKinesis (~> 2.28.2)
     - CrowdConnectedCore (~> 1.6.0)
     - CrowdConnectedGeo (~> 1.6.0)
     - CrowdConnectedIPS (~> 1.6.0)
-    - ExpoFpCommon (= 4.2.8)
-  - ExpoFpFplan (4.2.8):
-    - ExpoFpCommon (= 4.2.8)
+    - ExpoFpCommon (= 4.2.11)
+  - ExpoFpFplan (4.2.11):
+    - ExpoFpCommon (= 4.2.11)
     - ZIPFoundation (~> 0.9.16)
-  - ExpoFpIndoorAtlas (4.2.8):
-    - ExpoFpCommon (= 4.2.8)
+  - ExpoFpIndoorAtlas (4.2.11):
+    - ExpoFpCommon (= 4.2.11)
     - IndoorAtlas (~> 3.6)
   - IndoorAtlas (3.6.4)
   - ZIPFoundation (0.9.16)
 
 DEPENDENCIES:
-  - ExpoFpCrowdConnected (= 4.2.8)
-  - ExpoFpFplan (= 4.2.8)
-  - ExpoFpIndoorAtlas (= 4.2.8)
+  - ExpoFpCrowdConnected (= 4.2.11)
+  - ExpoFpFplan (= 4.2.11)
+  - ExpoFpIndoorAtlas (= 4.2.11)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -79,13 +79,13 @@ SPEC CHECKSUMS:
   CrowdConnectedGeo: 8585b4d9fe570c986914947df366d1b94e027406
   CrowdConnectedIPS: 8ec1d8604d49b00b69014c58e33eab3ea7dba839
   CrowdConnectedShared: ba6736370f6dbb1a651b71c054140faa1af90e8f
-  ExpoFpCommon: 96a3f4c3e5ed0036dea52e7d312f424a32f22561
-  ExpoFpCrowdConnected: 1b60f326dad392447207ca8f76896dbd4b77c93e
-  ExpoFpFplan: 5cee26ff2f7ebdb9dc18bb72659f387540fff23f
-  ExpoFpIndoorAtlas: d95da1eea2b29d4ce22987e825214d9e159bae95
+  ExpoFpCommon: 2ab3262c8747ffa4cc910928dac9452dbf2219c7
+  ExpoFpCrowdConnected: 244eefd9da633e1b2fee34f9150768902e7242c0
+  ExpoFpFplan: ea7375ca3cfff34a3bc3170f8d89b5d21f230a15
+  ExpoFpIndoorAtlas: 61b4ae12d14eca7f68e0500c9b768b4461278277
   IndoorAtlas: 78c8db8dee8aae7cbe4c12d93a7534e11a09eca4
   ZIPFoundation: d170fa8e270b2a32bef9dcdcabff5b8f1a5deced
 
-PODFILE CHECKSUM: b529713ef4e5286d85bcc5cf62a3c1d1bf627b2b
+PODFILE CHECKSUM: 0b6959e55f6c31194d6210407a27177a0ba98abe
 
 COCOAPODS: 1.12.1
