@@ -116,6 +116,7 @@
 				E79136A227860EDC00A573F1 /* Resources */,
 				E79136B92786103900A573F1 /* Embed Frameworks */,
 				338FA6500C4D0477334F4FBA /* [CP] Embed Pods Frameworks */,
+				A50CBA7DC79D074D71D2930D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +188,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A50CBA7DC79D074D71D2930D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE3C04BC0A834EB132BFBA08 /* [CP] Check Pods Manifest.lock */ = {

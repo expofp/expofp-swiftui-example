@@ -34,8 +34,8 @@ struct FplanApp: App {
                      .onFpError { errorCode, description in
                          print("[OnFpError]")
                      }
-                     .onBoothClick { id, name in
-                         print("[OnBoothClick] id=\(id); name=\(name)")
+                     .onBoothClick { booth in
+                         print("[OnBoothClick] id=\(booth.id); name=\(booth.name)")
                      }
                      .onBuildDirection { direction in
                          print("[OnBuildDirection]")
