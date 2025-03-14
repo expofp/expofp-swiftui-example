@@ -3,254 +3,153 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52BE63D84AF7B142F0AD972B /* Pods_Fplan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337EEA253DD29D3A106B9908 /* Pods_Fplan.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		E79136A827860EDC00A573F1 /* FplanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79136A727860EDC00A573F1 /* FplanApp.swift */; };
-		E79136AC27860EDC00A573F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79136AB27860EDC00A573F1 /* Assets.xcassets */; };
-		E79136AF27860EDC00A573F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79136AE27860EDC00A573F1 /* Preview Assets.xcassets */; };
+		E7A78FDC2D84316800DD3EDA /* ExpoFpFplan in Frameworks */ = {isa = PBXBuildFile; productRef = E7A78FDB2D84316800DD3EDA /* ExpoFpFplan */; };
+		E7A78FDF2D84319100DD3EDA /* ExpoFpCrowdConnected in Frameworks */ = {isa = PBXBuildFile; productRef = E7A78FDE2D84319100DD3EDA /* ExpoFpCrowdConnected */; };
+		E7A78FE22D84324D00DD3EDA /* ExpoFpIndoorAtlas in Frameworks */ = {isa = PBXBuildFile; productRef = E7A78FE12D84324D00DD3EDA /* ExpoFpIndoorAtlas */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E79136B92786103900A573F1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		337EEA253DD29D3A106B9908 /* Pods_Fplan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fplan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E738826B28EADB8B0011E318 /* ExpoFpIndoorAtlas.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ExpoFpIndoorAtlas.xcframework; path = "../expofp-indooratlas-ios/xcframework/ExpoFpIndoorAtlas.xcframework"; sourceTree = "<group>"; };
-		E79136A427860EDC00A573F1 /* Fplan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fplan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E79136A727860EDC00A573F1 /* FplanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FplanApp.swift; sourceTree = "<group>"; };
-		E79136AB27860EDC00A573F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E79136AE27860EDC00A573F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F38C9A991B7B3B208D6D8ACC /* Pods-Fplan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fplan.release.xcconfig"; path = "Target Support Files/Pods-Fplan/Pods-Fplan.release.xcconfig"; sourceTree = "<group>"; };
-		FCFE6347CC11EC850A1715DA /* Pods-Fplan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fplan.debug.xcconfig"; path = "Target Support Files/Pods-Fplan/Pods-Fplan.debug.xcconfig"; sourceTree = "<group>"; };
+		E7A78FC02D84311F00DD3EDA /* Fplan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fplan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E7A78FC22D84311F00DD3EDA /* Fplan */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Fplan;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		E79136A127860EDC00A573F1 /* Frameworks */ = {
+		E7A78FBD2D84311F00DD3EDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BE63D84AF7B142F0AD972B /* Pods_Fplan.framework in Frameworks */,
+				E7A78FDF2D84319100DD3EDA /* ExpoFpCrowdConnected in Frameworks */,
+				E7A78FE22D84324D00DD3EDA /* ExpoFpIndoorAtlas in Frameworks */,
+				E7A78FDC2D84316800DD3EDA /* ExpoFpFplan in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B5D289A2893A63674118DE5 /* Frameworks */ = {
+		E7A78FB72D84311F00DD3EDA = {
 			isa = PBXGroup;
 			children = (
-				E738826B28EADB8B0011E318 /* ExpoFpIndoorAtlas.xcframework */,
-				337EEA253DD29D3A106B9908 /* Pods_Fplan.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C7357AE0C49BB046B361AD9E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FCFE6347CC11EC850A1715DA /* Pods-Fplan.debug.xcconfig */,
-				F38C9A991B7B3B208D6D8ACC /* Pods-Fplan.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		E791369B27860EDC00A573F1 = {
-			isa = PBXGroup;
-			children = (
-				E79136A627860EDC00A573F1 /* Fplan */,
-				E79136A527860EDC00A573F1 /* Products */,
-				C7357AE0C49BB046B361AD9E /* Pods */,
-				4B5D289A2893A63674118DE5 /* Frameworks */,
+				E7A78FC22D84311F00DD3EDA /* Fplan */,
+				E7A78FC12D84311F00DD3EDA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E79136A527860EDC00A573F1 /* Products */ = {
+		E7A78FC12D84311F00DD3EDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E79136A427860EDC00A573F1 /* Fplan.app */,
+				E7A78FC02D84311F00DD3EDA /* Fplan.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E79136A627860EDC00A573F1 /* Fplan */ = {
-			isa = PBXGroup;
-			children = (
-				E79136A727860EDC00A573F1 /* FplanApp.swift */,
-				E79136AB27860EDC00A573F1 /* Assets.xcassets */,
-				E79136AD27860EDC00A573F1 /* Preview Content */,
-			);
-			path = Fplan;
-			sourceTree = "<group>";
-		};
-		E79136AD27860EDC00A573F1 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E79136AE27860EDC00A573F1 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E79136A327860EDC00A573F1 /* Fplan */ = {
+		E7A78FBF2D84311F00DD3EDA /* Fplan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E79136B227860EDC00A573F1 /* Build configuration list for PBXNativeTarget "Fplan" */;
+			buildConfigurationList = E7A78FCE2D84312100DD3EDA /* Build configuration list for PBXNativeTarget "Fplan" */;
 			buildPhases = (
-				EE3C04BC0A834EB132BFBA08 /* [CP] Check Pods Manifest.lock */,
-				E79136A027860EDC00A573F1 /* Sources */,
-				E79136A127860EDC00A573F1 /* Frameworks */,
-				E79136A227860EDC00A573F1 /* Resources */,
-				E79136B92786103900A573F1 /* Embed Frameworks */,
-				338FA6500C4D0477334F4FBA /* [CP] Embed Pods Frameworks */,
-				A50CBA7DC79D074D71D2930D /* [CP] Copy Pods Resources */,
+				E7A78FBC2D84311F00DD3EDA /* Sources */,
+				E7A78FBD2D84311F00DD3EDA /* Frameworks */,
+				E7A78FBE2D84311F00DD3EDA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				E7A78FC22D84311F00DD3EDA /* Fplan */,
+			);
 			name = Fplan;
+			packageProductDependencies = (
+				E7A78FDB2D84316800DD3EDA /* ExpoFpFplan */,
+				E7A78FDE2D84319100DD3EDA /* ExpoFpCrowdConnected */,
+				E7A78FE12D84324D00DD3EDA /* ExpoFpIndoorAtlas */,
+			);
 			productName = Fplan;
-			productReference = E79136A427860EDC00A573F1 /* Fplan.app */;
+			productReference = E7A78FC02D84311F00DD3EDA /* Fplan.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E791369C27860EDC00A573F1 /* Project object */ = {
+		E7A78FB82D84311F00DD3EDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					E79136A327860EDC00A573F1 = {
-						CreatedOnToolsVersion = 13.2.1;
+					E7A78FBF2D84311F00DD3EDA = {
+						CreatedOnToolsVersion = 16.1;
 					};
 				};
 			};
-			buildConfigurationList = E791369F27860EDC00A573F1 /* Build configuration list for PBXProject "Fplan" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = E7A78FBB2D84311F00DD3EDA /* Build configuration list for PBXProject "Fplan" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = E791369B27860EDC00A573F1;
-			productRefGroup = E79136A527860EDC00A573F1 /* Products */;
+			mainGroup = E7A78FB72D84311F00DD3EDA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E7A78FDA2D84316800DD3EDA /* XCRemoteSwiftPackageReference "expofp-fplan-ios-spm" */,
+				E7A78FDD2D84319100DD3EDA /* XCRemoteSwiftPackageReference "expofp-crowdconnected-ios-spm" */,
+				E7A78FE02D84324D00DD3EDA /* XCRemoteSwiftPackageReference "expofp-indooratlas-ios-spm" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E7A78FC12D84311F00DD3EDA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E79136A327860EDC00A573F1 /* Fplan */,
+				E7A78FBF2D84311F00DD3EDA /* Fplan */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E79136A227860EDC00A573F1 /* Resources */ = {
+		E7A78FBE2D84311F00DD3EDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E79136AF27860EDC00A573F1 /* Preview Assets.xcassets in Resources */,
-				E79136AC27860EDC00A573F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		338FA6500C4D0477334F4FBA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A50CBA7DC79D074D71D2930D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fplan/Pods-Fplan-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE3C04BC0A834EB132BFBA08 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Fplan-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		E79136A027860EDC00A573F1 /* Sources */ = {
+		E7A78FBC2D84311F00DD3EDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E79136A827860EDC00A573F1 /* FplanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E79136B027860EDC00A573F1 /* Debug */ = {
+		E7A78FCC2D84312100DD3EDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -280,7 +179,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -294,24 +194,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		E79136B127860EDC00A573F1 /* Release */ = {
+		E7A78FCD2D84312100DD3EDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -341,7 +242,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -349,90 +251,68 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E79136B327860EDC00A573F1 /* Debug */ = {
+		E7A78FCF2D84312100DD3EDA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCFE6347CC11EC850A1715DA /* Pods-Fplan.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fplan/Preview Content\"";
 				DEVELOPMENT_TEAM = 2TWXV89QU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Fplan/Info.plist;
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth requested for better positioning experience.";
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth requested for better positioning experience.";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
-				INFOPLIST_KEY_NSMotionUsageDescription = "For better indoor positioning.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.9;
-				ONLY_ACTIVE_ARCH = YES;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.expofp.Fplan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E79136B427860EDC00A573F1 /* Release */ = {
+		E7A78FD02D84312100DD3EDA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F38C9A991B7B3B208D6D8ACC /* Pods-Fplan.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fplan/Preview Content\"";
 				DEVELOPMENT_TEAM = 2TWXV89QU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Fplan/Info.plist;
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth requested for better positioning experience.";
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth requested for better positioning experience.";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
-				INFOPLIST_KEY_NSMotionUsageDescription = "For better indoor positioning.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.9;
-				ONLY_ACTIVE_ARCH = NO;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.expofp.Fplan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,25 +322,70 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E791369F27860EDC00A573F1 /* Build configuration list for PBXProject "Fplan" */ = {
+		E7A78FBB2D84311F00DD3EDA /* Build configuration list for PBXProject "Fplan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E79136B027860EDC00A573F1 /* Debug */,
-				E79136B127860EDC00A573F1 /* Release */,
+				E7A78FCC2D84312100DD3EDA /* Debug */,
+				E7A78FCD2D84312100DD3EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E79136B227860EDC00A573F1 /* Build configuration list for PBXNativeTarget "Fplan" */ = {
+		E7A78FCE2D84312100DD3EDA /* Build configuration list for PBXNativeTarget "Fplan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E79136B327860EDC00A573F1 /* Debug */,
-				E79136B427860EDC00A573F1 /* Release */,
+				E7A78FCF2D84312100DD3EDA /* Debug */,
+				E7A78FD02D84312100DD3EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7A78FDA2D84316800DD3EDA /* XCRemoteSwiftPackageReference "expofp-fplan-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/expofp/expofp-fplan-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.18;
+			};
+		};
+		E7A78FDD2D84319100DD3EDA /* XCRemoteSwiftPackageReference "expofp-crowdconnected-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/expofp/expofp-crowdconnected-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.18;
+			};
+		};
+		E7A78FE02D84324D00DD3EDA /* XCRemoteSwiftPackageReference "expofp-indooratlas-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/expofp/expofp-indooratlas-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.18;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7A78FDB2D84316800DD3EDA /* ExpoFpFplan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7A78FDA2D84316800DD3EDA /* XCRemoteSwiftPackageReference "expofp-fplan-ios-spm" */;
+			productName = ExpoFpFplan;
+		};
+		E7A78FDE2D84319100DD3EDA /* ExpoFpCrowdConnected */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7A78FDD2D84319100DD3EDA /* XCRemoteSwiftPackageReference "expofp-crowdconnected-ios-spm" */;
+			productName = ExpoFpCrowdConnected;
+		};
+		E7A78FE12D84324D00DD3EDA /* ExpoFpIndoorAtlas */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7A78FE02D84324D00DD3EDA /* XCRemoteSwiftPackageReference "expofp-indooratlas-ios-spm" */;
+			productName = ExpoFpIndoorAtlas;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = E791369C27860EDC00A573F1 /* Project object */;
+	rootObject = E7A78FB82D84311F00DD3EDA /* Project object */;
 }
