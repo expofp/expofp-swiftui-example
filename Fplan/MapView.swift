@@ -2,25 +2,36 @@ import SwiftUI
 import ExpoFpCommon
 import ExpoFpFplan
 import ExpoFpCrowdConnected
+import ExpoFpIndoorAtlas
 
 struct MapView: View {
     
     let fplanView = FplanView()
     
-    func selectBooth() {
-        fplanView.selectBooth("4.1-31")
+    func load(){
+        fplanView.load("https://demo.expofp.com?noOverlay=true")
     }
     
-    func buildRoute() {
-        fplanView.selectRoute(Route(from: "4.1-37", to: "4.1-11", exceptInaccessible: false))
+    func loadOffline(){
+        fplanView.downloadZipToCache("https://demo.expofp.com") { filePath, error in
+            fplanView.openFileFromCache(params: "noOverlay=true", settings: Settings())
+        }
     }
     
-    func setPosition() {
-        fplanView.setCurrentPosition(BlueDotPoint(x: 9388.00, y: 9887.00, z: "1"), true)
+    func loadWithCrowdConnectedProvider(){
+        var lp: LocationProvider = CrowdConnectedProvider(ExpoFpCrowdConnected.Settings(appKey:"APP_KEY", token: "TOKEN", secret: "SECRET", mode: ExpoFpCrowdConnected.Mode.IPS_ONLY))
+        GlobalLocationProvider.initialize(lp)
+        GlobalLocationProvider.start()
+        
+        fplanView.load("https://demo.expofp.com?noOverlay=true", useGlobalLocationProvider: true)
     }
     
-    func clear() {
-        fplanView.clear()
+    func loadWithIndoorAtlasProvider(){
+        var lp: LocationProvider = IndoorAtlasProvider(ExpoFpIndoorAtlas.Settings("API_KEY", "API_SECRET_KEY"))
+        GlobalLocationProvider.initialize(lp)
+        GlobalLocationProvider.start()
+        
+        fplanView.load("https://demo.expofp.com?noOverlay=true", useGlobalLocationProvider: true)
     }
     
     var body: some View {
@@ -46,20 +57,20 @@ struct MapView: View {
                 print("[OnExhibitorCustomButtonClick] externalId=\(externalId); buttonNumber=\(buttonNumber); buttonUrl=\(buttonUrl)")
             }
             .onAppear{
-                fplanView.load("demo.expofp.com")
+                load()
             }
             .toolbar {
                 ToolbarItem {
-                    Button("Select booth", action: selectBooth)
+                    Button("Select booth", action: { fplanView.selectBooth("4.1-31") })
                 }
                 ToolbarItem {
-                    Button("Build route", action: buildRoute)
+                    Button("Build route", action: { fplanView.selectRoute(Route(from: "4.1-37", to: "4.1-11", exceptInaccessible: false)) })
                 }
                 ToolbarItem {
-                    Button("Set position", action: setPosition)
+                    Button("Set position", action: { fplanView.setCurrentPosition(BlueDotPoint(x: 9388.00, y: 9887.00, z: "1"), true) })
                 }
                 ToolbarItem {
-                    Button("Clear", action: clear)
+                    Button("Clear", action: { fplanView.clear() })
                 }
             }
         }
