@@ -15,7 +15,7 @@ import ExpoFpIndoorAtlas
 
 struct MapView: View {
     
-    let fplanView = FplanView()
+    let fplanView = SharedFplanView()
     
     func load(){
         fplanView.load("https://demo.expofp.com?noOverlay=true")
